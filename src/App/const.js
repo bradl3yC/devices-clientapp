@@ -1,0 +1,9 @@
+export const FETCH_SYSTEMS = 'app/FETCH_SYSTEMS';
+export const FETCH_SYSTEMS_SUCCESS = 'app/FETCH_SYSTEMS_SUCCESS';
+export const FETCH_SYSTEMS_FAILURE = 'app/FETCH_SYSTEMS_FAILURE';
+export const SET_ACTIVE_SYSTEM = 'app/SET_ACTIVE_SYSTEM';
+export const OPEN_MODAL = 'app/OPEN_MODAL';
+export const CLOSE_MODAL = 'app/CLOSE_MODAL';
+export const SORT_SYSTEMS = 'app/SORT_SYSTEMS';
+export const EDIT_ACTIVE_SYSTEM = 'app/EDIT_ACTIVE_SYSTEM';
+export const FILTER_SYSTEMS = 'app/FILTER_SYSTEMS';

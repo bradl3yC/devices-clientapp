@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { combineReducers, createStore, applyMiddleware } from 'redux';
-import App from './components/App';
-import appReducer from './components/App/reducer';
+import { App } from './App';
+import appReducer from './App/reducer';
 import registerServiceWorker from './registerServiceWorker';
 
 const rootReducer = combineReducers({
@@ -14,6 +14,7 @@ const rootReducer = combineReducers({
 /* eslint-disable no-underscore-dangle */
 const store = createStore(
   rootReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
   applyMiddleware(thunk),
 );
 /* eslint-enable */
